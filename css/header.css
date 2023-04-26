@@ -1,0 +1,136 @@
+.header-wrap {
+    position: relative;
+    height: 100vh;
+    transition: all 0.3s linear;
+}
+
+.header__title {
+    margin-top: 121px;
+    font-size: 74px;
+    line-height: 55px;
+    font-family: "Zen Dots";
+    max-width: 63%;
+}
+.header__subtitle {
+    font-family: "Jost";
+    margin-top: 18px;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #bdbfd1;
+}
+.header__btn {
+    font-family: "Jost";
+    margin-top: 42px;
+    margin-right: 35px;
+    padding: 23px 47px;
+    font-size: 18px;
+}
+.header__btn:hover:not(.active) {
+    box-shadow: 0 0 15px #550e16;
+}
+.header__info {
+    margin-top: 76px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 26%;
+    text-align: center;
+}
+.header__info-title {
+    font-size: 24px;
+    font-family: "Jost";
+}
+.header__info-subtitle {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #bdbfd1;
+    margin-top: 14px;
+}
+.header__bg {
+    position: absolute;
+    right: 0;
+    top: -100px;
+    width: 740px;
+    height: 100%;
+    background-image: url("../images/header-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+.header__img {
+    display: none;
+}
+@media (max-width: 1100px) {
+    .header__title {
+        font-size: 50px;
+    }
+}
+@media (max-width: 900px) {
+    .header__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__bg {
+        width: 100%;
+        background-position: center;
+        top: 0;
+    }
+    .header__title {
+        text-align: center;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .header-wrap {
+        height: auto;
+        min-height: 800px;
+    }
+    .header__btn {
+        margin: 0;
+        margin-top: 30px;
+    }
+}
+@media (max-width: 650px) {
+    .header__title {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .header__subtitle {
+        font-size: 10px;
+    }
+    .header__btn {
+        margin-top: 30px;
+        font-size: 14px;
+        padding: 20px 30px;
+    }
+    .h-b {
+        display: flex;
+        justify-content: center;
+        column-gap: 10px;
+    }
+    .header__info {
+        max-width: 100%;
+    }
+}
+@media (max-width: 550px) {
+    .header__title {
+        margin: 0 auto;
+        margin-top: 90px;
+        text-align: center;
+        max-width: 100%;
+    }
+    .header__subtitle {
+        margin: 0 auto;
+        text-align: center;
+        max-width: 100%;
+    }
+    .header__info {
+        justify-content: center;
+        column-gap: 10px;
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+    .header-wrap {
+        min-height: 500px;
+    }
+}
